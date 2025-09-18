@@ -17,5 +17,5 @@ My personal developer portfolio, built with HTML, CSS, and JavaScript. This site
 * JavaScript
 
 **Live Demo**
-👉 [View Portfolio](https://github.com/cvcpatton/cvcpatton.github.io/index.html)
+👉 [View Portfolio](cvcpatton.github.io/index.html)
 
