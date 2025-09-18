@@ -1,6 +1,6 @@
 # 🌐 Portfolio Website
 
-**Description**
+**Description**: 
 My personal developer portfolio, built with HTML, CSS, and JavaScript. This site highlights my software development projects, GitHub repositories, and professional background.
 
 **Features**
