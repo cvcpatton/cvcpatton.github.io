@@ -1,1 +1,39 @@
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2E9C6A; /* accent color */
+}
+
+/* Links */
+a {
+  color: #2E9C6A;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;              /* spacing between badges */
+  justify-content: center;   /* center align */
+  margin-top: 1rem;
+}
+
+.skills-grid span {
+  padding: 0.5rem 1rem;
+  background: #eaf7f1;       /* light green tint */
+  border: 1px solid #2E9C6A; /* accent color */
+  border-radius: 20px;       /* rounded pill shape */
+  color: #2E9C6A;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;       /* keeps each badge on one line */
+}
 
