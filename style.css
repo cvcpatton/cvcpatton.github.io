@@ -7,8 +7,9 @@
   width: 100%;            
   height: auto;           
   display: block;         
-  max-height: 500px;      
-  object-fit: cover;      
+  max-width:1060px;    
+  object-fit: cover;  
+  margin:0 auto;    
 }
 
 body {
