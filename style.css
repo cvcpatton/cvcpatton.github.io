@@ -1,3 +1,16 @@
+.site-header {
+  width: 100%;
+  overflow: hidden; /* Prevents image from overflowing */
+}
+
+.header-image {
+  width: 100%;            
+  height: auto;           
+  display: block;         
+  max-height: 500px;      
+  object-fit: cover;      
+}
+
 body {
   font-family: Georgia, 'Times New Roman', serif;
 }
