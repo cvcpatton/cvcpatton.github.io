@@ -151,10 +151,13 @@
     
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Catherine V.C. Patton</p>
+      <p>© <span id="year"></span> Catherine Patton</p>
   </footer>
+    
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
