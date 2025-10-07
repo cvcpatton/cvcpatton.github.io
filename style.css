@@ -9,17 +9,27 @@
   display: block;         
   max-width:1060px;    
   object-fit: cover;  
-  margin:0 auto;    
+  margin:0 auto;
 }
 
 body {
   font-family: Georgia, 'Times New Roman', serif;
 }
 
+p {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  line-height: 1.5; /* optional: controls vertical space within multi-line paragraphs */
+  padding: 0; /* ensures no internal padding is applied */
+}
+
 /* Headings */
 h1, h2, h3 {
   font-family: Georgia, 'Times New Roman', serif;
   color: #2E9C6A; /* accent color */
+    line-height: 1.0; /* tighter than default (usually 1.4–1.6) */
+  margin-top: 0.3em;  /* reduce space above headings */
+  margin-bottom: 0.4em; /* reduce space below headings */
 }
 
 /* Links */
