@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catherine Patton | Portfolio</title>
-<link rel="stylesheet" href="https://cvcpatton.github.io/style.css">
+<link rel="stylesheet" href="styles.css">
 </head>
   
 <body><center>
@@ -12,7 +12,7 @@
   <img src="https://github.com/cvcpatton/cvcpatton/raw/main/cvcpatton_github-banner_0925.png" alt="Catherine Patton | Software Developer" class="header-image">
 </header>
 
-  <!-- Header Section -->
+    <!-- Header Section -->
   <section class="header-section">
     <h1> Catherine Patton | Software Developer</h1>
     <p><i>Building clean, efficient applications with Python, Java, and JavaScript</i></p>
@@ -52,21 +52,7 @@
       </div>
     </div>
     
-            <div class="project-card">
-      <h3>Dog Shelter Matchmaker 🐶</h3>
-      <div class="skills-grid">
-      <span>Java</span>
-      <span>OOP</span>
-      <span>File I/O</span>
-    </div>
-      <p>Java console application using OOP, file I/O, and unit testing to match adopters with shelter dogs via quiz results.</p>
-      <div class="project-buttons">
-        <a href="https://github.com/cvcpatton/dog-match" target="_blank" class="project-btn">View Repo</a>
-
-      </div>
-    </div>   
-    
-            <div class="project-card">
+     <div class="project-card">
       <h3>Denver Nightsky Helper ⭐</h3>
       <div class="skills-grid">
       <span>Python</span>
@@ -81,6 +67,20 @@
       </div>
     </div>    
     
+                <div class="project-card">
+      <h3>Dog Shelter Matchmaker 🐶</h3>
+      <div class="skills-grid">
+      <span>Java</span>
+      <span>OOP</span>
+      <span>File I/O</span>
+    </div>
+      <p>Java console application using OOP, file I/O, and unit testing to match adopters with shelter dogs via quiz results.</p>
+      <div class="project-buttons">
+        <a href="https://github.com/cvcpatton/dog-match" target="_blank" class="project-btn">View Repo</a>
+
+      </div>
+    </div> 
+    
             <div class="project-card">
       <h3>This Porfolio Website 💼</h3>
       <div class="skills-grid">
@@ -88,7 +88,7 @@
       <span>CSS</span>
       <span>JavaScript</span>
     </div>
-      <p>Responsive HTML/CSS/JavaScript portfolio showcasing development projects, GitHub repos, and live demos. (Responsive portion in progress.)</p>
+      <p>Responsive HTML/CSS/JavaScript portfolio showcasing development projects, GitHub repos, and live or video demos. </p>
       <div class="project-buttons">
         <a href="https://github.com/cvcpatton/cvcpatton.github.io" target="_blank" class="project-btn">View Repo</a>
         <a href="https://cvcpatton.github.io/index.html" target="_blank" class="project-btn">Live Demo</a>
@@ -102,24 +102,24 @@
       <span>Loops</span>
       <span>Recursion</span>
     </div>
-      <p>A console-based C++ application that generates anagrams of a user-provided word. Demonstrates string manipulation, loops, and randomization.</p>
+      <p>A console-based C++ app that generates anagrams of a user-provided word. Uses string manipulation, loops, and randomization.</p>
       <div class="project-buttons">
         <a href="https://github.com/cvcpatton/anagram-generator
 " target="_blank" class="project-btn">View Repo</a>
         
       </div>
     </div>    
-  </section>   
+  </section>  
 
-  <br>
+    <p id="greeting"></p>
     
   <!-- About Section -->
   <section class="about-me">
     <h2>About Me</h2>
     <div class="about-me-text">
-    <p>I’m Catherine Patton, a software developer specializing in Java, Python, and JavaScript. As a career-changer with 20 years of professional experience in higher education and biotech, I now build efficient and creative applications with a focus on problem-solving and clean code.</p>
+    <p>I’m Catherine Patton, a software developer specializing in Python, Java, and JavaScript. As a career-changer with 20 years of professional experience in higher education and biotech, I now build efficient and creative applications with a focus on problem-solving and clean code.</p>
       
-      <p>I've built projects ranging from console applications to full-stack web apps. I bring strong problem-solving, communication, and teamwork skills to every project.    </p>
+      <p>I've built projects ranging from console applications to full-stack web apps. I bring strong analytical and collaboration skills to every project. I thrive in remote and asynchronous work environments, combining self-motivation with clear, proactive communication.   </p>
     </div>
   </section>
 
@@ -127,20 +127,21 @@
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <span>Java</span>
       <span>Python</span>
-      <span>C++</span>
+      <span>Java</span>
       <span>JavaScript</span>
+      <span>C++</span>      
+      <span>Flask</span>
       <span>React</span>
       <span>SQL</span>
       <span>HTML</span>
       <span>CSS</span>
       <span>Git</span>
     </div>
-    <p><b>Other Skills:</b> French (intermediate), Italian (intermediate)</p>
+    <p><b>Other Skills:</b> French (high intermediate), Italian (high intermediate)</p>
   </section>
-
-  <br>
+    
+    <br>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -151,13 +152,12 @@
     
   </section>
 
+  <!-- Footer -->
   <footer>
       <p>© <span id="year"></span> Catherine Patton</p>
   </footer>
     
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
