@@ -139,3 +139,10 @@ a:hover {
   font-weight: 500;
   white-space: nowrap;       /* keeps each badge on one line */
 }
+
+@media (max-width: 600px) {
+  .skills-grid span {
+    font-size: 0.85em;     /* slightly smaller text */
+    padding: 5px 10px;     /* slightly smaller bubbles */
+  }
+}
