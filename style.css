@@ -142,8 +142,13 @@ a:hover {
 
 @media (max-width: 600px) {
   .skills-grid {
-    font-size: 0.85em;     /* slightly smaller text */
-    justify-content: center; /* or adjust spacing for mobile */
-    gap: 0.4rem;
+    font-size: 0.8em;        /* slightly smaller text */
+    gap: 0.3rem;             /* tighter spacing */
+    justify-content: center;
+  }
+
+  .skills-grid span {
+    padding: 0.4rem 0.7rem;  /* reduce padding on pills */
+    font-size: 0.85rem;      /* reduce font size inside pills */
   }
 }
