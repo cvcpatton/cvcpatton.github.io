@@ -121,34 +121,157 @@ a:hover {
 }
 
 /* Skills Grid */
+.site-header {
+  width: 100%;
+  overflow: hidden; /* Prevents image from overflowing */
+}
+
+.header-image {
+  width: 100%;            
+  height: auto;           
+  display: block;         
+  max-width:1060px;    
+  object-fit: cover;  
+  margin:0 auto;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  line-height: 1.5; /* optional: controls vertical space within multi-line paragraphs */
+  padding: 0; /* ensures no internal padding is applied */
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2E9C6A; /* accent color */
+    line-height: 1.0; /* tighter than default (usually 1.4–1.6) */
+  margin-top: 0.3em;  /* reduce space above headings */
+  margin-bottom: 0.4em; /* reduce space below headings */
+}
+
+/* Links */
+a {
+  color: #2E9C6A;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Projects */ 
+.projects-section {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #2E9C6A;
+}
+
+.project-card p {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-btn {
+  padding: 0.5rem 1.2rem;
+  background-color: #2E9C6A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-btn:hover {
+  background-color: #267e58;
+  transform: translateY(-2px);
+}
+
+/* About Me */
+.about-me {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.about-me-text {
+  max-width: 700px;      /* ✅ limits the line width */
+  margin: 0 auto;        /* ✅ centers the content */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Skills Grid */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;              /* spacing between badges */
-  justify-content: center;   /* center align */
-  margin-top: 1rem;
+  justify-content: center;
+  gap: 0.4rem 0.6rem;    /* vertical and horizontal spacing */
+  max-width: none;       /* no width limit on desktop */
+  margin: 1rem auto 0;
 }
 
 .skills-grid span {
-  padding: 0.5rem 1rem;
-  background: #eaf7f1;       /* light green tint */
-  border: 1px solid #2E9C6A; /* accent color */
-  border-radius: 20px;       /* rounded pill shape */
+  padding: 0.4rem 0.8rem;
+  background: #eaf7f1;
+  border: 1px solid #2E9C6A;
+  border-radius: 20px;
   color: #2E9C6A;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  white-space: nowrap;       /* keeps each badge on one line */
+  white-space: nowrap;
 }
 
 @media (max-width: 600px) {
   .skills-grid {
-    font-size: 0.8em;        /* slightly smaller text */
-    gap: 0.3rem;             /* tighter spacing */
-    justify-content: center;
+    max-width: 95vw;        /* limit width to force wrapping */
+    gap: 0.3rem 0.5rem;     /* reduce spacing */
   }
 
   .skills-grid span {
-    padding: 0.4rem 0.7rem;  /* reduce padding on pills */
-    font-size: 0.85rem;      /* reduce font size inside pills */
+    font-size: 0.85rem;
+    padding: 0.35rem 0.65rem;
   }
 }
