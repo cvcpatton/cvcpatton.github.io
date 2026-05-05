@@ -19,5 +19,4 @@ My personal developer portfolio, built with HTML, CSS, and JavaScript. This site
 **Live Demo**
 👉 [View Portfolio](https://cvcpatton.github.io/index.html)  
 
-(In process, October 2025 ... full demos coming later fall 2025) 
 
